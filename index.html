@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuadem Hotel</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/fuadem favicon.png">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./main.css">
+
+  <!-- Owl Carousel styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font styles -->
+    <link href="https://api.fontshare.com/v2/css?f[]=sentient@400,200,300&display=swap" rel="stylesheet">
+
+  <!-- Jquery.js -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+  <script>
+    let mybutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+  </script>
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#gallery">Gallery</a> </li>
+          <li><a href="#services">Services</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li><a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a></li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./images/banner-1.jpg" alt="">
+          <div class="text">
+            <h1>Fuadem Hotels</h1>
+            <p>
+              Hospitality business is synonymous with comfort, and <br>
+              Prince Wahab Oluwa is making a difference with Fuadem Hotel and Suites.              
+            </p>
+            <div class="flex">
+              <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-2.jpg" alt="">
+          <div class="text">
+            <h1>So relaxing</h1>
+            <p>
+              Hospitality business is synonymous with comfort, and <br>
+              Prince Wahab Oluwa is making a difference with Fuadem Hotel and Suites.              
+            </p>
+            <div class="flex">
+              <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-3.jpg" alt="">
+          <div class="text">
+            <h1>Book now.</h1>
+            <p>
+              Hospitality business is synonymous with comfort, and <br>
+              Prince Wahab Oluwa is making a difference with Fuadem Hotel and Suites.              
+            </p>
+            <div class="flex">
+              <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+
+      <div class="form">
+        <form class="grid">
+          <input type=text" onfocus="(this.type='date')" placeholder="Arrival Date">
+          <input type="text" onfocus="(this.type='date')" placeholder="Departure date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Childern">
+          <a href="./booking.html"><input type="submit" value="CHECK AVAILABILITY"></a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top">
+    <div class="container flex" id="about">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Fuadem Hotel</h2>
+        </div>
+        
+        <p>Fuadem Hotel & Suites is the most preferred hotel in West Africa, and it is all about the right mix! Located at 157b, Kirikiri road in Ajeromi-Ifelodun Local Government. The luxury and tasty outlook of the hotel and suites has signalled a paradigm shift in the hospitality business.
+
+          The modest but beautifully crafted terrace of the hotel provides the perfect ambience for customer's privacy and comfort.
+          
+          Our rooms which are tastefully designed comes with variety of choices for customers delight.
+          
+          We offer 24 hours service delivery with fully air conditioned atmosphere. 
+          
+          Contact us today and book your reservations.
+        </p>
+
+        <button class="primary-btn">LEARN MORE</button>
+      </div>
+      <div class="right">
+        <img src="images/about.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>250</h1>
+        <hr>
+        <span>Room Nights</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Cooperate Guests</span>
+      </div>
+      <div class="box">
+        <h1>10</h1>
+        <hr>
+        <span>Staff</span>
+      </div>
+      <div class="box">
+        <h1>7</h1>
+        <hr>
+        <span>Technician</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms" id="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our Rooms</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="images/room-1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Standard Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p>
+               -->
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦15,000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Deluxe Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p>
+               -->
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦18,000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="items">
+            <div class="image">
+              <img src="images/room-4.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Executive Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p>
+               -->
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦20,000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-5.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Junior Suite I</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p> -->
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦23,000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-6.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Junior Suite II</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p> -->
+              
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦25,000<span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-7.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Suite</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- <p>Accomodation, Housekeeping, Internet, Free parking on premises,
+                Air conditioning, Breakfast, <br> A complimentary water</p> -->
+              
+              <div class="button flex">
+                <a href="./booking.html"><button class="primary-btn">BOOK NOW</button></a>
+                <h3>₦35,000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery" id="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Gallery</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-2.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-5.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top" id="services">
+    <div class="container top">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      </div>            
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-bed"></i>
+              <h3>Accomodations</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Restaurant</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-beer"></i>
+              <h3>Bar</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-users"></i>
+              <h3>Conference</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/service.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="map top" id="contact">
+    <div class="heading">
+      <h1>CONTACTS</h1>
+      <h2>Contact us</h2>
+    </div>            
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.285708841119!2d3.3260646728946206!3d6.449030056255475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b892daed29065%3A0x9bd7a82f97087ffd!2sFuadem%20Hotels%20%26%20Suite!5e0!3m2!1sen!2sng!4v1671689308404!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="images/logo-2.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="icon">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <a href="#about"><li>About us</li></a>
+          <a href="#gallery"><li>Gallery</li></a>
+          <a href="#contact"><li>Contact Us</li></a>
+          <a href="#services"><li>Services</li></a>
+          <a href="#"><li>Our Vision & Mission</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>157B Kirikiri Road, off Second benue-way, Ajegunle Apapa, Lagos. </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>+234 81 878 9961</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>fuademhotelsltd@gmail.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright © 2022 Fuadem Hotels.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
