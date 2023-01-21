@@ -1002,6 +1002,10 @@ input:nth-child(4){
     width: 99%;
   }
 
+  .heading h1 {
+    display: none;
+  }
+  
   .heading h2 {
     margin: 30px 0;
     font-size: 45px;
@@ -1215,6 +1219,11 @@ input:nth-child(4){
   .grid2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .heading h1 {
+    display: block;
+  }
+  
  
   footer {
     padding: 10% 3% 5% 10%;
