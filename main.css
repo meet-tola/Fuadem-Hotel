@@ -194,6 +194,8 @@ header .navlinks span {
     padding-left: 20px;
     transform: scale(1.5,1);
   }
+
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -271,6 +273,7 @@ header .navlinks span {
   font-size: 80px;
   font-family: 'Sentient', serif;
   font-weight: 300;
+  max-width: 600px;
 }
 
 .home p {
@@ -607,6 +610,10 @@ input:nth-child(4){
   padding: 20px;
 }
 
+.services .box a {
+  color: var(--primary);
+}
+
 .services .box .text {
   padding: 30px 0;
   border: 1px dashed #fff;
@@ -757,7 +764,7 @@ input:nth-child(4){
 footer {
   background: #282834;
   color: var(--text-secondary);
-  padding: 10% 0 5% 6%;
+  padding: 10% 3% 5% 1%;
 }
 
 footer .grid {
@@ -802,7 +809,7 @@ footer a:hover {
 footer i {
   color: var(--accent);
   margin: 20px 0;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 footer i:hover {
@@ -820,6 +827,92 @@ footer label {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*--------footer---------*/
+
+/*--------About html - aboutus ---------*/
+
+.about_us {
+  background-image: url("./images/background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 23vh;
+  width: 100%;
+  color: #fff;
+}
+
+.about_us .aboutus_box {
+  padding: 20px 75px;
+}
+
+.about_us h1 {
+  font-size: 70px;
+}
+
+.about_us p {
+  font-size: 17px;
+}
+
+.about_us p a {
+  color: var(--accent);
+}
+
+.about_us p a:hover {
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+
+.about_container {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;   
+}
+
+ .about_container .heading h1 {
+  margin: 0 90px;
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.05;
+  position: absolute;
+  top: -30px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.about_container .heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  font-weight: 400;
+  font-family: 'Sentient', serif;
+  color: var(--primary);
+  text-align: center;
+}
+
+.about_desp {
+  margin: 0 90px 120px 90px;
+  line-height: 35px;
+  color: var(--primary);
+}
+
+.about_desp p {
+  margin-bottom: 20px;
+}
+
+.about_desp img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.about_desp button {
+  margin-bottom: 10px;
+  background-color: var(--primary);
+  cursor: text;
+}
+
+.about_desp button:hover {
+  background-color: var(--primary);
+}
+
+
 
 @media only screen and (max-width:768px) {
   .home {
@@ -950,7 +1043,7 @@ input:nth-child(4){
 
   .rooms .owl-nav .owl-prev,
   .rooms .owl-nav .owl-next {
-    top: -12%;
+    top: -15%;
   }
 
   .rooms .owl-nav .owl-next {
@@ -968,7 +1061,7 @@ input:nth-child(4){
 
   .gallery .owl-nav .owl-prev,
   .gallery .owl-nav .owl-next {
-    top: -17%;
+    top: -15%;
   }
 
   .gallery .owl-nav .owl-next {
@@ -1030,7 +1123,30 @@ input:nth-child(4){
   footer .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  footer img {
+    width: 40%;
+  }
+
+  .about_us .aboutus_box {
+    padding: 27px 45px;
+  }
+  
+  .about_us h1 {
+    font-size: 50px;
+  }
+
+  .about_container .heading h1 {
+    margin: 0 20px;
+  }  
+
+  .about_desp {
+    margin: 0 40px 120px 40px;
+    line-height: 35px;
+  }
+ 
 }
+
 
 
 @media only screen and (min-width:768px) {
@@ -1099,7 +1215,19 @@ input:nth-child(4){
   .grid2 {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
+  footer {
+    padding: 10% 3% 5% 10%;
+  }
 
+  footer img {
+    width: 10%;
+  }
+
+  .about_us .aboutus_box {
+    padding: 40px 75px;
+  }
+  
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
@@ -1187,8 +1315,9 @@ input:nth-child(4){
 }
 
 footer img {
-  width: 32%;
+  width: 40%;
 }
+
 }
 
 @media screen and (min-width: 1023px) {
@@ -1230,5 +1359,73 @@ footer img {
     top: 30%;
     left: 17%;
   }
+
+  footer {
+    padding: 10% 3% 5% 1%;
+  }
+  
+  
+  footer img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .about_us .aboutus_box {
+    padding: 20px 75px;
+  }
+  
+  .about_us h1 {
+    font-size: 70px;
+  }
+  
+  .about_us p {
+    font-size: 17px;
+  }
+  
+  .about_us p a {
+    color: var(--accent);
+  }
+  
+  .about_us p a:hover {
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  
+  .about_container {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;   
+  }
+  
+   .about_container .heading h1 {
+    margin: 0 90px;
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.05;
+    position: absolute;
+    top: -30px;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  .about_container .heading h2 {
+    margin: 30px 0;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Sentient', serif;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  .about_desp {
+    margin: 0 90px 120px 90px;
+    line-height: 35px;
+    color: var(--primary);
+  }
+  
+  .about_desp p {
+    margin-bottom: 20px;
+  } 
 
 }
